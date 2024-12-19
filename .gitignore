@@ -1,0 +1,4 @@
+#ignore modules and notes
+node_modules/
+
+NodeJS Bootcamp/
