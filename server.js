@@ -178,6 +178,10 @@ const Person = require('./models/person');
 const MenuItem=require('./models/menu');
 const app = express();
 
+/// configuration for dot env file
+require('dotenv').config();
+const PORT = process.env.PORT|| 3000;// use port variable
+
 // Middleware
 app.use(express.json());
 
@@ -258,7 +262,7 @@ app.use('/person', personRoutes);
 app.use('/menu', menuItemRoutes);
 
 // Start the server
-const PORT = 3000;
+
 app.listen(PORT, () => {
     console.log(`Server is listening on http://localhost:${PORT}`);
 });

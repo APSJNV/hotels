@@ -1,4 +1,7 @@
 #ignore modules and notes
 node_modules/
+# sensitive info in .env
+.env
 
+# pdf notes not required to push
 NodeJS Bootcamp/
